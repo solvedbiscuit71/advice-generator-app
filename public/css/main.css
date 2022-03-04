@@ -1,3 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+/***** Color Palette *****/
+/***** Boiler Plate Code *****/
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
+:root {
+  box-sizing: border-box;
+  font-family: "Manrope";
+  font-weight: 800;
+  background-color: #1f2632;
+}
+
+/***** Mobile Design *****/
+body {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 1em;
+}
+
+.card {
+  background-color: #323a49;
+  border-radius: 0.8em;
+  padding: 2em;
+  width: min(100%, 560px);
+  position: relative;
+}
+.card__title {
+  color: #52ffa8;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-block: 0 2em;
+}
+.card__advice {
+  color: #cee3e9;
+  font-size: 1.375rem;
+  text-align: center;
+  margin-block: 1.45em;
+}
+.card__divider {
+  width: 100%;
+  height: 1em;
+  margin-block: 2em;
+  background-image: url("../../images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left 50%;
+}
+.card__regenerate {
+  position: absolute;
+  bottom: -1.5em;
+  left: calc(50% - 1.5em);
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: #52ffa8;
+  display: grid;
+  place-content: center;
+}
 
 /*# sourceMappingURL=main.css.map */
