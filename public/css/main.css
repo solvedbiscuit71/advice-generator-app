@@ -30,7 +30,8 @@ main {
   background-color: #323a49;
   border-radius: 0.8em;
   padding: 2em;
-  width: min(100%, 560px);
+  width: 340px;
+  min-height: 240px;
   position: relative;
 }
 .card__title {
@@ -47,6 +48,11 @@ main {
   font-size: 1.375rem;
   text-align: center;
   margin-block: 1.45em;
+}
+.card__advice svg {
+  fill: #cee3e9;
+  vertical-align: super;
+  width: 1rem;
 }
 .card__divider {
   width: 100%;
@@ -75,6 +81,9 @@ main {
 
 /***** Desktop Design *****/
 @media only screen and (min-width: 789px) {
+  .card {
+    width: 560px;
+  }
   .card__advice {
     font-size: 1.5rem;
     margin-block: 1.33em;

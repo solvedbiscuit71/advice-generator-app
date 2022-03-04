@@ -41,7 +41,8 @@ main {
   border-radius: .8em;
 
   padding: 2em;
-  width: min(100%,560px);
+  width: 340px; 
+  min-height: 240px;
 
   position: relative;
   &__title {
@@ -61,6 +62,13 @@ main {
 
     text-align: center;
     margin-block: 1.45em;
+
+    svg {
+      fill: $advice-color;
+      vertical-align: super;
+
+      width: 1rem;
+    }
   }
 
   &__divider {
@@ -100,6 +108,7 @@ main {
 
 @media only screen and (min-width: 789px) {
   .card {
+    width: 560px;
     &__advice {
       font-size: 1.5rem;
       margin-block: 1.33em;
