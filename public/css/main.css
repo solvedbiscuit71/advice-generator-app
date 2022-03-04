@@ -59,14 +59,30 @@ main {
 }
 .card__regenerate {
   position: absolute;
-  bottom: -1.5em;
-  left: calc(50% - 1.5em);
-  width: 3em;
-  height: 3em;
+  bottom: -2em;
+  left: calc(50% - 2em);
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
   background-color: #52ffa8;
   display: grid;
   place-content: center;
+}
+.card__regenerate:hover {
+  box-shadow: 0px 0px 2em 0px #52ffa8;
+  cursor: pointer;
+}
+
+/***** Desktop Design *****/
+@media only screen and (min-width: 789px) {
+  .card__advice {
+    font-size: 1.5rem;
+    margin-block: 1.33em;
+    margin-inline: 2em;
+  }
+  .card__divider {
+    background-image: url("../../images/pattern-divider-desktop.svg");
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
